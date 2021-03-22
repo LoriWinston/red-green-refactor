@@ -5,5 +5,10 @@ function getName(person) {
 module.exports = getName;
  
 const getBracketNotation = (object) => {
-    return object['name'];
+  return object['name'];
+};
+
+const getNameObjectDestructuring = (object) => {
+  const { name } = object;
+  return name;
 };
